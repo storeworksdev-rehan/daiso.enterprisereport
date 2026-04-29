@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import { FormEvent, useState } from "react";
 import axios from "axios";
@@ -38,7 +38,7 @@ export default function Home() {
       }
 
       setStatus("success");
-      setMessage("Login successful. Redirecting…");
+      setMessage("Login successful. Redirecting");
       setTimeout(() => {
         window.location.href = "/dashboard/sales-report";
       }, 800);
@@ -63,7 +63,7 @@ export default function Home() {
 
   return (
     <div className="min-h-screen flex">
-      {/* Left panel — branding */}
+      {/* Left panel : branding */}
       <div className="hidden lg:flex lg:w-1/2 flex-col justify-between bg-[#1a1a1a] px-12 py-10">
         <div className="flex items-center gap-3">
           <img
@@ -82,16 +82,16 @@ export default function Home() {
             operations."
           </blockquote>
           <p className="mt-4 text-slate-500 text-sm">
-            Daiso Enterprise Platform &mdash; Internal Use Only
+            Daiso Enterprise Platform : Internal Use Only
           </p>
         </div>
 
         <p className="text-slate-600 text-xs">
-          &copy; {new Date().getFullYear()} Daiso. All rights reserved.
+          © {new Date().getFullYear()} Daiso. All rights reserved.
         </p>
       </div>
 
-      {/* Right panel — form */}
+      {/* Right panel : form */}
       <div className="flex flex-1 flex-col items-center justify-center bg-slate-50 px-6 py-12">
         <div className="w-full max-w-sm">
           {/* Mobile logo */}
@@ -153,7 +153,7 @@ export default function Home() {
                   value={password}
                   onChange={(e) => setPassword(e.target.value)}
                   className="w-full rounded-md border border-slate-300 bg-white px-3.5 py-2.5 pr-10 text-sm text-slate-900 placeholder-slate-400 shadow-sm outline-none transition focus:border-[#e60081] focus:ring-2 focus:ring-[#e60081]/40"
-                  placeholder="••••••••"
+                  placeholder="********"
                 />
                 <button
                   type="button"
@@ -196,7 +196,7 @@ export default function Home() {
                       d="M4 12a8 8 0 018-8v4a4 4 0 00-4 4H4z"
                     />
                   </svg>
-                  Signing in…
+                  Signing in
                 </span>
               ) : (
                 "Sign in"
@@ -242,7 +242,7 @@ export default function Home() {
           )}
 
           <p className="mt-8 text-center text-xs text-slate-400">
-            Protected by Daiso Security &middot; Internal network access only
+            Protected by Daiso Security : Internal network access only
           </p>
         </div>
       </div>
