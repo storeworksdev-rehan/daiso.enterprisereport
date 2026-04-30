@@ -117,7 +117,7 @@ export default function Home() {
                 htmlFor="email"
                 className="block text-sm font-medium text-slate-700 mb-1.5"
               >
-                Email address
+                Username
               </label>
               <input
                 id="email"
