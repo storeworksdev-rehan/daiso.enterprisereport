@@ -64,7 +64,14 @@ export default function Home() {
   return (
     <div className="min-h-screen flex">
       {/* Left panel : branding */}
-      <div className="hidden lg:flex lg:w-1/2 flex-col justify-between bg-[#1a1a1a] px-12 py-10">
+      <div className="hidden lg:flex lg:w-1/2 flex-col justify-between relative px-12 py-10">
+        <video
+          autoPlay
+          loop
+          muted
+          className="absolute inset-0 w-full h-full object-cover"
+          src="https://cdn.videvo.net/videvo_files/video/free/2019-07/small_watermarked/190705_03_Dusk_4k_001_preview.webm"
+        />
         <div className="flex items-center gap-3">
           <img
             src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/40/%E3%83%80%E3%82%A4%E3%82%BD%E3%83%BC.svg/3840px-%E3%83%80%E3%82%A4%E3%82%BD%E3%83%BC.svg.png"
